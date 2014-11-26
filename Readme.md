@@ -1,3 +1,14 @@
-## Yo, I'm a Readme
+The Iron Yard Atlanta Fall 2014 Front End Class
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+Final Project!
+
+How to Use:
+Clone my repo
+Run npm install
+Run Bower install
+
+
+Libraries Used: Angular, Parse, jQuery
+
+
+Author: Wendy Nichols
