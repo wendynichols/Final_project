@@ -8,7 +8,7 @@ Run npm install
 Run Bower install
 
 
-Libraries Used: Angular, Parse, jQuery
+Libraries Used: Angular, Parse, jQuery, Sass, Modernizr, 
 
 
 Author: Wendy Nichols
