@@ -8,7 +8,22 @@
   }
   })
 
+  .constant('PARSE_URI', 'https://api.parse.com/1/')
   .config( function ($routeProvider) {
+
+
+    $routeProvider.when('/', {
+      templateUrl: 'scripts/users/login.tpl.html',
+      controller: 'User'
+    }).when('/list', {
+      templateUrl: 'scripts/standups/list.tpl.html',
+      controller: 'List'
+    }).otherwise({
+      templateUrl: 'scripts/users/login.tpl.html',
+      controller: 'User'
+    })
+
+  })
 
   });
 
