@@ -25,6 +25,30 @@
 
   })
 
+
+  .run(['$rootScope', '$location', 'UserFactory', function ($rootScope, $location, UserFactory) {
+    $rootScope.$on('$routeChangeStart', function (event) {
+
+      UserFactory.checkUser();
+      $(document).foundation();
+      window.picker = new Pikaday({
+        field: $('#datepicker')[0],
+        format: 'dddd, MMM Do'
+      });
+
+    });
+  }])
+  
+  .directive('logOut', function (UserFactory) {
+    return {
+      link: function ($scope, element, attrs) {
+        element.bind('click', function () {
+          UserFactory.logout();
+        });
+      }
+    }
+
+
   });
 
 }());
